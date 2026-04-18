@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+}
+
+/* Style the subtitle cues */
+video::cue {
+  color: yellow;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.controls {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.controls button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#showBtn {
+  background-color: #4ecca3;
+  color: #1a1a2e;
+}
+
+#showBtn:hover {
+  background-color: #38b68e;
+}
+
+#hideBtn {
+  background-color: #e94560;
+  color: #ffffff;
+}
+
+#hideBtn:hover {
+  background-color: #c73652;
+}

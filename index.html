@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video with Subtitles</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Video with Subtitles</h1>
+
+    <video id="myVideo" controls width="600">
+      <source src="sample.mp4" type="video/mp4">
+
+      <!-- Subtitle Track -->
+      <track
+        src="subtitles.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+        default>
+    </video>
+
+    <div class="controls">
+      <button id="showBtn">Show Subtitles</button>
+      <button id="hideBtn">Hide Subtitles</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
